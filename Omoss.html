@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOC_Om_Oss</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #om_DOC_boks{
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.75;
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+            text-align: center; 
+            background-image: url(images/DOC_bakgrunn8.png);
+            min-height: 100vh;
+            background-attachment: scroll;
+        }
+        .text1{
+            font-size: xx-large;
+            font-weight: bold;
+        }
+        .boks1 p{
+            font-size: 50px;
+            font-weight: bold; 
+        }
+        #linkefelt1{
+            width: 100vw;
+            height: 150px;
+            background-color: rgb(141, 6, 40);
+            flex-grow: 8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+        }
+        #linkefelt1 a{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-decoration: none;
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #linkefelt1 a:hover{
+            text-decoration: underline;
+        }
+        #hoved_boks{
+            width: 100vw;
+            height: 1800px;
+            background-color: rgb(141, 6, 40);
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-evenly;
+            align-content: space-around;
+        }
+        #bilde_boks1{
+            width: 40%;
+            height: 400px;
+            box-shadow: 8px 120px 100px black;
+        }
+        #tekst_boks1{
+            width: 40%;
+            height: 400px;
+            text-align: center;
+            align-content: center;
+            font-size: x-large;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #tekst_boks2{
+            width: 40%;
+            height: 400px;
+            text-align: center;
+            align-content: center;
+            font-size: x-large;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #bilde_boks2{
+            width: 40%;
+            height: 400px;
+            box-shadow: 8px 120px 100px black;
+        }
+        #bilde_boks3{
+            width: 40%;
+            height: 400px;
+            box-shadow: 8px 20px 100px black;
+        }
+        #tekst_boks3{
+            width: 40%;
+            height: 400px;
+            text-align: center;
+            align-content: center;
+            font-size: x-large;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #linkefelt2{
+            width: 100vw;
+            height: 150px;
+            background-color: rgb(141, 6, 40);
+            flex-grow: 8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+        }
+        #linkefelt2 a{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-decoration: none;
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #linkefelt2 a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="om_DOC_boks">
+        <div class="boks1">
+            <p>DOC / Om oss</p> <br><br><br><br>
+            <span class="text1">Nidar ble etablert i 1912 som en trøndersk bedrift. <br><br> I 2012 feiret Nidar sitt 100-årsjubileum, og året etter ble Nidar en del av Orkla Confectionery & Snacks Norge. <br><br> Fortsatt er Nidar et av Norges største sjokolade- og godterimerker.</span>
+        </div>
+    </div>
+    <div id="linkefelt1"><a href="file:///C:/Users/akssve07/OneDrive%20-%20WANG%20AS/IT1/Web2/Index.html">Besøk vår hjemmeside</a></div>
+    <div id="hoved_boks">
+        <div id="bilde_boks1"><img src="Images/DOC_bakgrunn.jpg" alt="" width="100%"></div>
+        <div id="tekst_boks1">Vi ønsker å være en ansvarlig aktør. <br><br> Omtanke for mennesker, miljø og dyr er derfor viktig for oss når vi i Nidar utvikler våre produkter. <br><br>Nidar-fabrikken har en restriktiv holdning til bruk av tilsetningsstoffer. Vi bruker kun tilsetningsstoffer som er grundig utprøvd, og der det er mulig bruker vi naturlige tilsetningsstoffer. </div>
+        <div id="tekst_boks2">I mer enn 100 år har vi laget godteri og sjokolade i Trondheim, og mange av merkene våre har en lang og rik historie. <br><br> På Nidar-fabrikken i Trondheim er vi stolte av historien vår, og hva den betyr for norsk kultur. <br><br> Vi ønsker ikke å bruke genmodifiserte organismer (GMO), og krever at underleverandører ikke har GMO i sine produkter. Alle Nidars produkter er derfor uten GMO.</div>
+        <div id="bilde_boks2"><img src="Images/DOC_bakgrunn4.jpg" alt="" width="100%"></div>
+        <div id="bilde_boks3"><img src="Images/DOC_bakgrunn3.png" alt="" width="100%"></div>
+        <div id="tekst_boks3">Hver eneste dag blir tusenvis av sjokolader, seigmenn, karameller og andre godsaker til på fabrikken vår i Trondheim. <br><br> Bak hver eneste eske med godteri ligger et omfattende arbeid, mye kjærlighet og glede.</div>
+    </div>
+    <div id="linkefelt2"><a href="file:///C:/Users/akssve07/OneDrive%20-%20WANG%20AS/IT1/Web2/Produkter.html">Kjøp produktene våre her</a></div>
+    <script type="text/javascript">
+        var bilde = document.querySelector("#om_DOC_boks");
+        window.addEventListener("scroll", reduserFart);
+        function reduserFart(){
+            var slep = window.pageYOffset;
+            bilde.style.backgroundPositionY = slep*0.8 + "px";
+        }
+    </script>
+</body>
+</html>

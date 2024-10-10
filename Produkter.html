@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOC_Produkter</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #produkter_boks{
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.75;
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+            text-align: center; 
+            background-image: url(images/DOC_bakgrunn9.png);
+            min-height: 100vh;
+            background-attachment: scroll;
+        }
+        .text1{
+            font-size: xx-large;
+            font-weight: bold;
+        }
+        .boks1 p{
+            font-size: 50px;
+            font-weight: bold; 
+        }
+        #linkefelt1{
+            width: 100vw;
+            height: 150px;
+            background-color: rgb(141, 6, 40);
+            flex-grow: 8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+        }
+        #linkefelt1 a{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-decoration: none;
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #linkefelt1 a:hover{
+            text-decoration: underline;
+        }
+        #produkt_boks{
+            width: 100vw;
+            height: 800px;
+            background-color: rgb(141, 6, 40);
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-evenly;
+            align-content: space-around;
+        }
+        #original{
+            width: 350px;
+            height: 348px;
+            box-shadow: 10px 10px 50px rgb(248, 26, 35);
+        }
+        #mentol{
+            width: 350px;
+            height: 348px;
+            box-shadow: 10px 10px 50px rgb(11, 89, 160);
+        }
+        #honning{
+            width: 350px;
+            height: 348px;
+            box-shadow: 10px 10px 50px rgb(247, 135, 9);
+        }
+        #eple{
+            width: 350px;
+            height: 348px;
+            box-shadow: 10px 15px 50px rgb(2, 165, 59);
+        }
+        #eukalyptus{
+            width: 350px;
+            height: 348px;
+            box-shadow: 10px 10px 50px rgb(16, 157, 169);
+        }
+        #bringebær{
+            width: 350px;
+            height: 348px;
+            box-shadow: 10px 14px 50px rgb(247, 27, 141);
+        }
+        #linkefelt2{
+            width: 100vw;
+            height: 150px;
+            background-color: rgb(141, 6, 40);
+            flex-grow: 8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+        }
+        #linkefelt2 a{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-decoration: none;
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #linkefelt2 a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="produkter_boks">
+        <div class="boks1">
+            <p>DOC / Produkter</p> <br><br><br><br>
+            <span class="text1">Doc er godt for halsen både for å lindre når du føler deg litt pjusk, <br> så vel som å klarne stemmen. <br><br> Doc inneholder nemlig mentol,  som er kjent for å lindre sår hals og hoste, <br> i tillegg til å åpne opp nesen når du er tett. <br><br> Det er nettopp derfor Doc har vært en favoritt blant nordmenn i snart 50 år.</span>
+        </div>
+    </div>
+    <div id="linkefelt1"><a href="file:///C:/Users/akssve07/OneDrive%20-%20WANG%20AS/IT1/Web2/Index.html">Besøk vår hjemmeside</a></div>
+    <div id="produkt_boks">  
+        <div id="original"><a href="file:///C:/Users/akssve07/OneDrive%20-%20WANG%20AS/IT1/Web2/DOC_Original.html"><img src="Images/DOC_original.png" alt="" width="350px"></a></div>
+        <div id="mentol"><a href="file:///C:/Users/akssve07/OneDrive%20-%20WANG%20AS/IT1/Web2/DOC_Mentol.html"><img src="Images/DOC_mentol.png" alt="" width="350px"></a></div>
+        <div id="honning"><a href="file:///C:/Users/akssve07/OneDrive%20-%20WANG%20AS/IT1/Web2/DOC_Honning.html"><img src="Images/DOC_honning.png" alt="" width="350px"></a></div>
+        <div id="eple"><a href="file:///C:/Users/akssve07/OneDrive%20-%20WANG%20AS/IT1/Web2/DOC_Eple.html"><img src="Images/DOC_eple.png" alt="" width="350px"></a></div>
+        <div id="eukalyptus"><a href="file:///C:/Users/akssve07/OneDrive%20-%20WANG%20AS/IT1/Web2/DOC_Eukalyptus.html"><img src="Images/DOC_eukalyptus.png" alt="" width="350px"></a></div>
+        <div id="bringebær"><a href="file:///C:/Users/akssve07/OneDrive%20-%20WANG%20AS/IT1/Web2/DOC_Bringeb%C3%A6r.html"><img src="Images/DOC_bringebær.png" alt="" width="350px"></a></div>
+    </div>
+    <div id="linkefelt2"><a href="file:///C:/Users/akssve07/OneDrive%20-%20WANG%20AS/IT1/Web2/Omoss.html">Informasjon om oss</a></div>
+    <script type="text/javascript">
+        var bilde = document.querySelector("#produkter_boks");
+        window.addEventListener("scroll", reduserFart);
+        function reduserFart(){
+            var slep = window.pageYOffset;
+            bilde.style.backgroundPositionY = slep*0.8 + "px";
+        }
+    </script>
+</body>
+</html>
