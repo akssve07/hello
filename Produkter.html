@@ -106,6 +106,32 @@
         #linkefelt2 a:hover{
             text-decoration: underline;
         }
+        #space{
+            width: 100vw;
+            height: 50px;
+            background-color: rgb(141, 6, 40);
+        }
+        .nav{
+            position: fixed;
+            bottom: 0px;
+            background-color: rgba(0,0,0,0.3);
+            width: 100vw;
+            height: 50px;
+            padding-top: 10px;
+            text-align: center;
+            z-index: 1;
+        }
+        .nav a{
+            font-size: 30px;
+            text-decoration: none;
+            color: gray;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .nav a:hover{
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -115,7 +141,7 @@
             <span class="text1">Doc er godt for halsen både for å lindre når du føler deg litt pjusk, <br> så vel som å klarne stemmen. <br><br> Doc inneholder nemlig mentol,  som er kjent for å lindre sår hals og hoste, <br> i tillegg til å åpne opp nesen når du er tett. <br><br> Det er nettopp derfor Doc har vært en favoritt blant nordmenn i snart 50 år.</span>
         </div>
     </div>
-    <div id="linkefelt1"><a href="file:///C:/Users/akssve07/OneDrive%20-%20WANG%20AS/IT1/Web2/Index.html">Besøk vår hjemmeside</a></div>
+    <div id="linkefelt1"><a href="file:///C:/Users/akssve07/OneDrive%20-%20WANG%20AS/IT1/Web2/index.html">Besøk vår hjemmeside</a></div>
     <div id="produkt_boks">  
         <div id="original"><a href="file:///C:/Users/akssve07/OneDrive%20-%20WANG%20AS/IT1/Web2/DOC_Original.html"><img src="Images/DOC_original.png" alt="" width="350px"></a></div>
         <div id="mentol"><a href="file:///C:/Users/akssve07/OneDrive%20-%20WANG%20AS/IT1/Web2/DOC_Mentol.html"><img src="Images/DOC_mentol.png" alt="" width="350px"></a></div>
@@ -125,6 +151,11 @@
         <div id="bringebær"><a href="file:///C:/Users/akssve07/OneDrive%20-%20WANG%20AS/IT1/Web2/DOC_Bringeb%C3%A6r.html"><img src="Images/DOC_bringebær.png" alt="" width="350px"></a></div>
     </div>
     <div id="linkefelt2"><a href="file:///C:/Users/akssve07/OneDrive%20-%20WANG%20AS/IT1/Web2/Omoss.html">Informasjon om oss</a></div>
+    <div id="space"></div>
+    <div class="nav">
+        <a href="file:///C:/Users/akssve07/OneDrive%20-%20WANG%20AS/IT1/Web2/index.html">VÅR HJEMMESIDE</a>
+        <a href="file:///C:/Users/akssve07/OneDrive%20-%20WANG%20AS/IT1/Web2/Omoss.html">INFORMASJON OM OSS</a>
+    </div>
     <script type="text/javascript">
         var bilde = document.querySelector("#produkter_boks");
         window.addEventListener("scroll", reduserFart);
